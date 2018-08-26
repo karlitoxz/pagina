@@ -55,13 +55,17 @@ var enviar_correo = function (nombre,email,message) {
 		data: {'nombre': nombre, 'email': email, 'message': message},
 	})
 	.done(function(data) {
-		console.log("success"+data);
+		if (data = 'ok') {
+			$.notify("El mensaje ha sido enviado", "success");
+			$('#configform')[0].reset();
+		}
 	})
 	.fail(function(data) {
-		console.log("error"+data);
+		if (data = 'fail') {
+			$.notify("El mensaje ha sido enviado", "error");
+			$('#configform')[0].reset();
+		}
 	})
-	.always(function(data) {
-		console.log("complete"+data);
-	});
+	
 	
 }

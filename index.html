@@ -128,7 +128,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form method="post" id="configform" action="#">
 								<div class="fields">
 									<div class="field">
 										<label for="nombre">Nombre</label>
@@ -143,29 +143,31 @@
 										<textarea name="message" id="message" rows="3"></textarea>
 									</div>
 								</div>
-								<div class="error_form">
-										
+								<div class="error_form" id="error_form">
+									
 								</div>
-
+								<div class="g-recaptcha" data-sitekey="6LcMXWwUAAAAAIJueLHOn5VBXKDbSO8Qd0hKQZWX"></div>
 								<ul class="actions">
 									<li><input type="button" id="BtnEnviar" value="Enviar mensaje" /></li>
 								</ul>
 							</form>
 						</section>
-						<section class="split contact">
-							<section class="alt">
-								<div class="g-recaptcha" data-sitekey="6LcMXWwUAAAAAIJueLHOn5VBXKDbSO8Qd0hKQZWX"></div>
-							</section>
+						<section class="split">
+
 							<section>
 								<h3>Teléfonos</h3>
-								<p><a href="https://wa.me/3228471545?text=Estoy%20interesado%20en%20una%20consulta">322 847 15 45</a>
+								<p><a href="https://wa.me/3228471545?text=Estoy%20interesado%20en%20una%20consulta">
+									<h2><img class="" src="images/whatsapp.png" width="4%">
+									<font color="black">322 847 15 45</font></h2></a>
 								</p>
 
-								<p><a href="https://wa.me/3143636340?text=Estoy%20interesado%20en%20una%20consulta">314 363 63 40</a></p>
+								<p><a href="https://wa.me/3143636340?text=Estoy%20interesado%20en%20una%20consulta">
+									<h2><img class="" src="images/whatsapp.png" width="4%">
+									<font color="black">314 363 63 40</font></h2></a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="mailto:contacto@salomeritualesdeamor.com?Subject=Hello%20again">contacto@salomeritualesdeamor.com</a></p><br>
+								<p><a href="mailto:contacto@salomeritualesdeamor.com?Subject=Hello%20again">contacto@salomeritualesdeamor.com</a></p>
 								<p><a href="mailto:salomeritualesdeamor@gmail.com?Subject=Hello%20again">salomeritualesdeamor@gmail.com</a></p>
 							</section>
 							<section>
@@ -181,7 +183,8 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; salomeritualesdeamor.com 2018</li><li>Diseño:
+						 <a href="mailto:electronicaysistemas@gmail.com">JuAn</a></li></ul>
 					</div>
 <!--imagen esquina whastapp-->
 		<div class="img_esquina">
@@ -203,6 +206,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/index.js"></script>
+			<script src="assets/js/notify.min.js"></script>
 
 	</body>
 </html>
